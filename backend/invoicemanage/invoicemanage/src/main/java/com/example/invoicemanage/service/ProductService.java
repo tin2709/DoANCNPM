@@ -1,7 +1,7 @@
-package service;
+package com.example.invoicemanage.service;
 
-import entity.Product;
-import repository.ProductRepository;
+import com.example.invoicemanage.entity.Product;
+import com.example.invoicemanage.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
