@@ -6,7 +6,7 @@ import com.example.invoicemanage.model.Order;
 import com.example.invoicemanage.model.OrderItem;
 import com.example.invoicemanage.repository.OrderRepository;
 import com.example.invoicemanage.service.OrderService;
-import com.example.invoicemanage.service.ProductService;
+import com.example.invoicemanage.service.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
-    private final ProductService productService;
+    private final IProductService productService;
     @Override
     public int addOrder(OrderRequestDTO orderRequestDTO) {
         Order order = Order.builder()
